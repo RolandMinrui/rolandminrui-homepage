@@ -21,20 +21,24 @@ const SocialMedia = [
 
 const News = [
   {
+    date: '2025.10',
+    content: 'One paper accepted to NeurIPS 2025!🎉',
+  },
+  {
     date: '2025.05',
-    content: 'One paper accepted to ACL 2025!',
+    content: 'One paper accepted to ACL 2025!🎉',
   },
   {
     date: '2024.10',
-    content: 'One paper accepted to MATH-AI Workshop at NeurIPS 2024!',
+    content: 'One paper accepted to MATH-AI Workshop at NeurIPS 2024!🎉',
   },
   {
     date: '2024.09',
-    content: 'One paper accepted to EMNLP 2024!',
+    content: 'One paper accepted to EMNLP 2024!🎉',
   },
   {
     date: '2024.07',
-    content: 'One paper accepted to UIST 2024!',
+    content: 'One paper accepted to UIST 2024!🎉',
   },
 ];
 </script>

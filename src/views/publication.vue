@@ -63,7 +63,7 @@ const publication = [
   {
     title: "R&D-Agent-Quant: A Multi-Agent Framework for Data-Centric Factors and Model Joint Optimization",
     author: "Yuante Li, Xu Yang, Xiao Yang, <u>Minrui Xu</u>, Xisen Wang, Weiqing Liu, Jiang Bian",
-    venue: "Arixv",
+    venue: "NeurIPS 2025",
     img: RD_Agent_Quant,
     buttons: [
       {button: "Arxiv", logo: faFileAlt, link: "https://arxiv.org/abs/2505.15155"},

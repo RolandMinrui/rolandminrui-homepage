@@ -87,9 +87,9 @@ const News = [
       <h3>News
         <FontAwesomeIcon :icon="faRankingStar" style="color: #4fc08d"/>
       </h3>
-        <div v-for="item in News" :key="item.date" class="sidebar-block">
-          <div style="font-size: 1rem; color: #4fc08d; font-weight: 600; margin-bottom: 0.25rem;">{{ item.date }}</div>
-          <div style="font-size: 1.1rem; line-height: 1.4;">{{ item.content }}</div>
+      <div v-for="item in News" :key="item.date" class="sidebar-block">
+        <div style="font-size: 1rem; color: #4fc08d; font-weight: 600; margin-bottom: 0.25rem;">{{ item.date }}</div>
+        <div style="font-size: 1.1rem; line-height: 1.4;">{{ item.content }}</div>
       </div>
     </div>
   </div>

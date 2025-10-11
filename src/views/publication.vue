@@ -109,7 +109,7 @@ const publication = [
   },
   {
     title: "DiscipLink: Unfolding Interdisciplinary Information Seeking Process via Human-AI Co-Exploration",
-    author: "Chengbo Zheng, Yuanhao Zhang, Zeyu Huang, Chuhan Shi, Minrui Xu, Xiaojuan Ma",
+    author: "Chengbo Zheng, Yuanhao Zhang, Zeyu Huang, Chuhan Shi, <u>Minrui Xu</u>, Xiaojuan Ma",
     venue: "UIST 2024",
     img: DiscipLink,
     buttons: [

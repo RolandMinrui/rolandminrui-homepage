@@ -4,6 +4,7 @@
     box-sizing: border-box;
     overflow-y: auto;
     height: 92vh;
+    font-size: 1.2rem;
 }
 
 section {
@@ -13,5 +14,6 @@ section {
 h2 {
     color: #2c3e50;
     margin: 0;
+    font-size: 1.6rem;
 }
   

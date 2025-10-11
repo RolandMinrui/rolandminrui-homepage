@@ -47,11 +47,11 @@ const experience = [
       </div>
       <p style="line-height: 1.5;">
         Welcome to my academic homepage! 👏
-        I am Xu Minrui (徐敏瑞), also known as Roland. I am a final year undergraduate student at <a href="https://hkust.edu.hk" target="_blank" rel="noopener noreferrer">The Hong Kong University of Science and Technology (HKUST)</a>, pursuing a double degree in Data Science and Technology, and Mathematics.
-        I am excited to announce that I will be joining the <a href="https://www.hkust-gz.edu.cn" target="_blank" rel="noopener noreferrer">LARK Lab@HKUST (GZ)</a> to pursue my Ph.D. in Computer Science under the supervision of Prof. <a href="https://cartus.github.io" target="_blank" rel="noopener noreferrer">Guo Zhijiang</a>.
+        I am Xu Minrui (徐敏瑞), also known as Roland. I am a final year undergraduate student at <a href="https://hkust.edu.hk" target="_blank" rel="noopener noreferrer">The Hong Kong University of Science and Technology (HKUST)</a>, majoring in Data Science and Technology, and additional major in Mathematics.
+        I am excited to announce that I will be joining the <a href="https://lark-lab-hkustgz.github.io" target="_blank" rel="noopener noreferrer">LARK Lab@HKUST (GZ)</a> to pursue my Ph.D. in Computer Science under the supervision of Prof. <a href="https://cartus.github.io" target="_blank" rel="noopener noreferrer">Guo Zhijiang</a>.
       </p>
       <p style="line-height: 1.5;">
-        Currently, I am a Research Intern at <a href="https://www.hkust-gz.edu.cn" target="_blank" rel="noopener noreferrer">Microsoft Research Asia (MSRA)</a> in the Machine Learning Group, working with the project <a href="https://github.com/microsoft/RD-Agent" target="_blank" rel="noopener noreferrer">RD-Agent</a>.
+        Previously, I am a Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/" target="_blank" rel="noopener noreferrer">Microsoft Research Asia (MSRA)</a> in the Machine Learning Group, working with the project <a href="https://github.com/microsoft/RD-Agent" target="_blank" rel="noopener noreferrer">RD-Agent</a>.
       </p>
     </section>
     

@@ -1,0 +1,1 @@
+import{_ as s,r as c,c as r,a as t,o as a}from"./index-CfubVCZe.js";const o={class:"cv-container"},_=["src"],n={__name:"CV",setup(d){const e=c("/src/assets/profile/CV.pdf");return(i,l)=>(a(),r("div",o,[t("iframe",{src:e.value,width:"100%",height:"100%",frameborder:"0"},null,8,_)]))}},f=s(n,[["__scopeId","data-v-00eb5cd9"]]);export{f as default};

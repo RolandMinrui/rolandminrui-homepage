@@ -164,6 +164,9 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .nav-box::after {
@@ -180,6 +183,7 @@
 
 .nav-box:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  animation: nav-hover-pulse 0.6s ease-out;
 }
 
 .nav-box:hover::after {
@@ -188,6 +192,7 @@
 
 .nav-box.router-link-active {
   background-color: rgba(255, 255, 255, 0.15);
+  animation: nav-active-glow 1.5s ease-in-out infinite;
 }
 
 .nav-box.router-link-active::after {

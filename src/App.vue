@@ -1,13 +1,39 @@
 <script setup>
 import Header from './components/Header.vue'
 import Sidebar from './components/Sidebar.vue'
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const transitionName = ref('page')
+
+// Watch for route changes to determine transition direction
+watch(() => route.path, (toPath, fromPath) => {
+  const routes = ['/', '/publication', '/cv', '/project']
+  const fromIndex = routes.indexOf(fromPath)
+  const toIndex = routes.indexOf(toPath)
+  
+  if (fromIndex === -1 || toIndex === -1) {
+    transitionName.value = 'page'
+  } else if (toIndex > fromIndex) {
+    transitionName.value = 'slide-right'
+  } else if (toIndex < fromIndex) {
+    transitionName.value = 'slide-left'
+  } else {
+    transitionName.value = 'page'
+  }
+})
 </script>
 
 <template>
   <Header />
   <div class="content-container">
     <Sidebar />
-    <router-view />
+    <router-view v-slot="{ Component }">
+      <transition :name="transitionName" mode="out-in">
+        <component :is="Component" :key="route.path" />
+      </transition>
+    </router-view>
   </div>
 </template>
 

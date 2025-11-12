@@ -5,6 +5,7 @@
     overflow-y: auto;
     height: 92vh;
     font-size: 1.2rem;
+    flex: 1;
 }
 
 section {
@@ -15,5 +16,51 @@ h2 {
     color: #2c3e50;
     margin: 0;
     font-size: 1.6rem;
+}
+
+/* Responsive design for main content */
+@media (max-width: 1023px) {
+  .main-content {
+    height: auto;
+    min-height: calc(93vh - 8vh);
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+    font-size: 1rem;
+    min-height: calc(94vh - 7vh);
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  section {
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    min-height: calc(94vh - 6vh);
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  section {
+    margin-bottom: 1rem;
+  }
 }
   

@@ -133,7 +133,26 @@
 }
 
 /* Add responsive design */
-@media (max-width: 600px) {
+@media (max-width: 1023px) {
+    .academic-block {
+        padding: 1rem;
+        gap: 1.2rem;
+    }
+    
+    .academic-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .academic-img {
+        max-width: 180px;
+    }
+    
+    .academic-header-toolbox {
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
     .academic-block {
         flex-direction: column;
         padding: 1rem;
@@ -142,16 +161,22 @@
 
     .academic-block > div:first-child {
         width: 100%;
+        text-align: center;
     }
 
     .academic-img {
         max-width: 100%;
         width: 100%;
+        max-width: 250px;
         height: auto;
     }
 
     .academic-content {
         width: 100%;
+    }
+
+    .academic-content h3 {
+        font-size: 1.2rem;
     }
 
     .academic-header {
@@ -163,5 +188,72 @@
     .academic-header-toolbox {
         width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .search-input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .academic-block {
+        padding: 0.75rem;
+        gap: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .academic-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .academic-img {
+        max-width: 200px;
+    }
+
+    .academic-header {
+        gap: 0.8rem;
+    }
+
+    .academic-header-toolbox {
+        gap: 0.6rem;
+    }
+    
+    .search-input {
+        width: 150px;
+        font-size: 0.85rem;
+    }
+    
+    .academic-tags {
+        gap: 0.4rem;
+    }
+    
+    .academic-tag, .academic-button {
+        font-size: 0.8rem;
+        padding: 0.1rem 0.25rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .academic-block {
+        padding: 0.6rem;
+        gap: 0.6rem;
+    }
+
+    .academic-content h3 {
+        font-size: 1rem;
+    }
+
+    .academic-img {
+        max-width: 180px;
+    }
+    
+    .search-input {
+        width: 120px;
+        font-size: 0.8rem;
+    }
+    
+    .academic-tag, .academic-button {
+        font-size: 0.75rem;
     }
 }

@@ -52,6 +52,7 @@
     position: absolute;
     left: 10px;
     color: #666;
+    font-size: 0.9rem;
 }
   
 .search-input {
@@ -61,12 +62,53 @@
     width: 250px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
   
 .search-input:focus {
     outline: none;
     border-color: #4fc08d;
     box-shadow: 0 0 0 4px rgba(79, 192, 141, 0.2);
+}
+
+/* Responsive search bar */
+@media (max-width: 768px) {
+    .search-input {
+        width: 200px;
+        font-size: 0.85rem;
+        padding: 7px 7px 7px 32px;
+    }
+    
+    .search-icon {
+        font-size: 0.85rem;
+        left: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        width: 150px;
+        font-size: 0.8rem;
+        padding: 6px 6px 6px 30px;
+    }
+    
+    .search-icon {
+        font-size: 0.8rem;
+        left: 7px;
+    }
+}
+
+@media (max-width: 360px) {
+    .search-input {
+        width: 120px;
+        font-size: 0.75rem;
+        padding: 5px 5px 5px 28px;
+    }
+    
+    .search-icon {
+        font-size: 0.75rem;
+        left: 6px;
+    }
 }
   
 /* Control Icons Styles */

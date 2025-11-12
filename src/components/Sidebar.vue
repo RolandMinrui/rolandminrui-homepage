@@ -99,6 +99,8 @@ const News = [
 <style scoped>
 .sidebar {
   width: 35%;
+  min-width: 300px;
+  max-width: 400px;
   padding: 1rem;
   background-color: #f8f9fa;
   display: flex;
@@ -106,14 +108,21 @@ const News = [
   gap: 1rem;
   overflow-y: auto;
   height: 92vh;
+  box-sizing: border-box;
 }
 
 .sidebar-card {
   background: white;
   border-radius: 12px;
-  padding: 0.5rem;
+  padding: 1rem;
   text-align: center;
   position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.sidebar-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-card img {
@@ -125,25 +134,31 @@ const News = [
   transition: transform 0.3s ease;
 }
 
+.sidebar-card img:hover {
+  transform: scale(1.05);
+}
+
 .sidebar-block {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
   margin-bottom: 0.8rem;
-  padding: 0.6rem 0.8rem;
+  padding: 0.8rem 1rem;
   border-bottom: 2px solid #eaeaea;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: all 0.2s ease;
   cursor: pointer;
   font-size: 1rem;
   text-align: center;
+  background: #fafafa;
 }
 
 .sidebar-block:hover {
-  background: #f8f8f8;
+  background: #f0f8f4;
   color: #4fc08d;
-  transition: all 0.3s ease;
+  border-color: #4fc08d;
+  transform: translateY(-2px);
 }
 
 .sidebar-block svg {
@@ -157,54 +172,56 @@ const News = [
 .social-section {
   text-align: center;
   z-index: 100;
-  }
+}
 
 .social-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .tooltip-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   color: white;
   font-size: 1.1rem;
-  transition: transform 0.2s;
+  transition: all 0.3s ease;
   position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .tooltip-wrapper:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .tooltip-wrapper::after {
   content: attr(title);
   position: absolute;
-  bottom: -30px;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 6px 10px;
+  border-radius: 6px;
   font-size: 0.8rem;
   white-space: nowrap;
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s, visibility 0.2s;
+  transition: all 0.3s ease;
 }
 
 .tooltip-wrapper::before {
   content: '';
   position: absolute;
-  bottom: -6px;
+  bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
   border-width: 4px;
@@ -213,7 +230,7 @@ const News = [
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s, visibility 0.2s;
+  transition: all 0.3s ease;
 }
 
 .tooltip-wrapper:hover::after,
@@ -229,34 +246,94 @@ const News = [
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 1023px) {
   .sidebar {
     width: 100%;
+    max-width: none;
+    min-width: auto;
     height: auto;
-    flex-direction: column;
-    padding: 0.5rem;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    padding: 1.5rem;
+  }
+
+  .sidebar-card img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .social-links {
+    gap: 1.5rem;
+  }
+
+  .tooltip-wrapper {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 0.75rem;
     gap: 1rem;
   }
 
   .sidebar-card {
-    width: 100%;
     padding: 1rem;
-    margin: 0;
   }
 
   .sidebar-card img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .sidebar-block {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
   }
 
   .social-links {
-    justify-content: center;
     gap: 1rem;
   }
 
   .tooltip-wrapper {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 0.5rem;
+    gap: 0.75rem;
+  }
+
+  .sidebar-card {
+    padding: 0.75rem;
+  }
+
+  .sidebar-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sidebar-block {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.9rem;
+    gap: 0.5rem;
+  }
+
+  .social-links {
+    gap: 0.75rem;
+  }
+
+  .tooltip-wrapper {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
   }
 }
 </style>

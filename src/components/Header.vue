@@ -34,6 +34,7 @@ import { faHouse, faRadio, faFlask } from '@fortawesome/free-solid-svg-icons'
   left: 0;
   width: 100%;
   height: 8vh;
+  min-height: 60px;
   background: linear-gradient(135deg, rgb(0, 93, 233), rgb(58, 154, 236));
   color: white;
   display: flex;
@@ -68,19 +69,83 @@ import { faHouse, faRadio, faFlask } from '@fortawesome/free-solid-svg-icons'
   align-items: center;
 }
 
+/* Responsive Design */
+@media (max-width: 1023px) {
+  .header {
+    padding: 0 1.5rem;
+  }
+  
+  .nav-block {
+    gap: 1rem;
+  }
+}
 
 @media (max-width: 768px) {
   .header {
     padding: 0 1rem;
+    height: 7vh;
+    min-height: 50px;
+  }
+
+  .header-left h1 {
+    font-size: 1.3rem;
   }
 
   .nav-block {
-    gap: 0.8rem;
+    gap: 0.6rem;
   }
 
   .nav-box {
     padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 0.75rem;
+    height: 6vh;
+    min-height: 45px;
+  }
+
+  .header-left h1 {
+    font-size: 1.1rem;
+  }
+
+  .nav-block {
+    gap: 0.4rem;
+  }
+
+  .nav-box {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-box svg {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    padding: 0 0.5rem;
+  }
+
+  .header-left h1 {
+    font-size: 1rem;
+  }
+
+  .nav-block {
+    gap: 0.3rem;
+  }
+
+  .nav-box {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .nav-box svg {
+    font-size: 0.8rem;
   }
 }
 </style>
